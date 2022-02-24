@@ -1,0 +1,134 @@
+html {
+    font-family: 'Exo', sans-serif;
+    height: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #b0ceff, #52ffc8);
+    background-attachment: fixed;
+    height: 98vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+}
+
+.card {
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    min-width: 100px;
+    max-width: 300px;
+    padding: 0px 10px;
+    min-height: 100px;
+    background-color: #ebebeb;
+    margin: 5px;
+}
+
+.flip {
+    background-color: #00ff95;
+}
+
+.correct {
+    background-color: #ededed;
+    opacity: 0.5;
+    color: #d4d4d4;
+    pointer-events: none;
+}
+
+.incorrect {    
+    background-color: #ff0a64;
+    color: white;
+    pointer-events: none;
+}
+
+.timer {
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalText {
+    font-weight: bold;
+}
+
+
+.reloadBtn {
+    background-color: rgba(102, 243, 201, 0.945); 
+    color: black; 
+    border: 2px solid #008CBA;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.reloadBtn:hover {
+    background-color: #008CBA;
+    color: white;
+}
